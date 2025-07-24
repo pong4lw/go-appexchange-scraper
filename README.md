@@ -23,28 +23,40 @@ Salesforce AppExchange（https://appexchange.salesforce.com）からアプリ情
 git clone https://github.com/pong4lw/go-appexchange-scraper.git
 cd go-appexchange-scraper
 go mod tidy
+```
 
 🔧 使い方
+```
 go run main.go
+```
 実行後、result.csv に以下の形式で結果が出力されます：
 
 fetched.txt
+```
 ListingId
+```
 
 csv
+```
 Name,ListingURL,WebsiteURL
+```
 
 🛠 必要な環境
+```
 Go 1.18 以上
 Google Chrome（インストール済であること）
 インターネット接続
+```
 
 📁 プロジェクト構成
+
+```
 .
 ├── main.go         // メイン処理
 ├── go.mod          // Go モジュール設定
 ├── fetched.txt     // 実行済みの企業ID（取得し直したい場合は対象のIDを削除）
 ├── result.csv      // 出力ファイル（スクレイピング結果）
+```
 
 ⚠️ 注意事項
 このツールは研究・学習目的で作成されたものです。
